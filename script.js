@@ -125,6 +125,16 @@ nav.addEventListener('click', (e) => {
   }
 });
 
+const scrollDownBtn = document.querySelector('.scroll-down');
+if (scrollDownBtn) {
+  scrollDownBtn.addEventListener('click', () => {
+    const experienceSection = document.querySelector('#experience');
+    if (experienceSection) {
+      experienceSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+}
+
 const scrollUpBtn = document.querySelector('.scroll-up-btn');
 if (scrollUpBtn) {
   scrollUpBtn.addEventListener('click', () => {
